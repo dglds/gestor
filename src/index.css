@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+:root {
+  --bg-canvas: #F5F2EA;
+  --bg-surface: #FFFFFF;
+  --ink: #111111;
+  --ink-muted: #525252;
+  --color-primary: #FFE500;
+  --color-primary-ink: #111111;
+  --color-secondary: #FF6B6B;
+  --color-secondary-ink: #111111;
+  --status-paid: #A3E635;
+  --status-pending: #FDBA74;
+  --status-income: #86EFAC;
+  --status-expense: #FCA5A5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg-canvas);
+  color: var(--ink);
+  caret-color: var(--ink);
+  font-family: "Archivo", "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-primary-ink);
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.font-money {
+  font-family: "IBM Plex Mono", "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.nb-border {
+  border: 2.5px solid var(--ink);
+}
+
+.nb-shadow {
+  box-shadow: 4px 4px 0px var(--ink);
+}
+
+.nb-shadow-sm {
+  box-shadow: 2.5px 2.5px 0px var(--ink);
+}
+
+.nb-shadow-lg {
+  box-shadow: 6px 6px 0px var(--ink);
+}
+
+.nb-press {
+  transition: transform 90ms ease, box-shadow 90ms ease, background-color 120ms ease;
+}
+
+.nb-press:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 0px var(--ink);
+}
+
+.nb-press:active:not(:disabled) {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--ink);
+}
+
+.nb-press-sm {
+  transition: transform 90ms ease, box-shadow 90ms ease, background-color 120ms ease;
+}
+
+.nb-press-sm:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 3.5px 3.5px 0px var(--ink);
+}
+
+.nb-press-sm:active:not(:disabled) {
+  transform: translate(1.5px, 1.5px);
+  box-shadow: 1px 1px 0px var(--ink);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-canvas);
+  border-left: 2px solid var(--ink);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ink);
+}

@@ -1,0 +1,22 @@
+- Software simples de controle financeiro
+- Custos fixos
+- Controla o que foi pago e o que falta pagar
+- Controle de extrato do cartãoo de crédito e banco
+
+
+STACK
+- Utilizar framework multiplataforma( preferencia para tauri).
+- Utilizar banco de dados, uma opção funcional e de simples manutentção
+- Preferência pela manutentenção.
+- Utilize justfile; somente para funções essenciais, nao quero muito comandos para atrapalhar
+
+
+UI
+- temática neo brutalista
+- possibilidade de personalizar as cores primarias e secundárias posteriormente
+
+CÒDIGO
+- Componente s reutilizáveis
+
+
+───────────────────────────────────────────────
